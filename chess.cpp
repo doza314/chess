@@ -2,15 +2,13 @@
 
 bool over = false;
 
-int botELO;
-
 bool color; // true = white, false = black
 
 board C;
 
-black B;
+player P;
 
-white W;
+bot BOT;
 
 int main()
 {
@@ -18,13 +16,12 @@ int main()
      
      while (!over)
     {
-        startMenu(C, botELO, color, over);
-
+        startMenu(C, P, BOT, color, over);
         if (over)
         {
             break;
         }
-        play(C, B, W, botELO, over);     
+        play(C, P, BOT, over);     
     }
 
     return 0;
