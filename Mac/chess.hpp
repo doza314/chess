@@ -11,12 +11,12 @@ class board
     private:
     int boardSize = 8;
 
-    std::vector<std::vector<std::string>> board;
-    std::vector<std::string> squares = {};
+    std::vector<std::string> board;
+    std::vector<std::string> squares;
 
     std::vector<sf::Texture> textures;
     std::vector<sf::Sprite> sprites;
-    std::vector<std::vector<int>> coords;   // {wR, wN, wB, wQ, wK, wB, wN, wR,
+    std::vector< std::vector<int> > coords;   // {wR, wN, wB, wQ, wK, wB, wN, wR,
                                             //  wP, wP, wP, wP, wP, wP, wP, wP,
                                             //  bP, bP, bP, bP, bP, bP, bP, bP,
                                             //  bR, bN, bB, bQ, bK, bB, bN, bR};
